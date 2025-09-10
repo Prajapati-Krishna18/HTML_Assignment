@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+
+<body>
+    <h1>CodingGita Student Registration Form</h1>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Full Name </label>
+            <input type="text" size="35" id="name" autocomplete="on" required> <br> <br>
+            <label for="email">Email Address </label>
+            <input type="email" size="31" id="email" autocomplete="on" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Security Details</legend>
+            <label for="password">Password</label>
+            <input type="password" id="password" required> <br> <br>
+            <label for="number">Mobile Number</label>
+            <input type="tel" id="number" required pattern="[0-9]{10}"> <br> <br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Gender</legend>
+            <input type="radio" name="gender" id="male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="other">
+            <label for="other">Other</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Hobbies</legend>
+            <input type="checkbox" id="Reading">
+            <label for="Reading">Reading</label>
+            <input type="checkbox" id="Coding">
+            <label for="Coding">Coding</label>
+            <input type="checkbox" id="Sports">
+            <label for="Sports">Sports</label>
+            <input type="checkbox" id="Music">
+            <label for="Music">Music</label>
+        </fieldset> <br>
+
+        <label for="Date">Choose Date :</label>
+        <input type="date" id="Date"> <br> <br>
+
+        <label for="file">Choose A file :</label>
+        <input type="file" accept=".pdf,.jpg"> <br> <br>
+
+        <label for="course">Choose Your Course </label>
+        <select name="course" id="123" >
+        <option value="MERN Stack">MERN Stack</option>
+        <option value="DSA">DSA</option>
+        <option value="Web Development">Web Development</option>
+        </select> <br> <br>
+
+        <textarea name="address" id="address" placeholder="Write Your Address Here" rows="5" cols="35"></textarea> <br> <br>
+
+        <label for="hours">Study Hours :</label>
+        <input type="range" name="Study hours" min="8" max="16"> 
+
+        <label for="color">Choose Colour :</label>
+        <input type="color" value="#ff0000"> <br> <br>
+
+        <label for="portfolio">Portfolio Website :</label>
+        <input type="url" name="website" id="portfolio" size="50">
+        <button>Search</button> <br> <br>
+
+        <label for="button">Seach Interests :</label>
+        <input type="search" id="button" placeholder="Seach Here Your Interests" size="35"> <br> <br>
+
+        <label for="time">Preferred Study Time :</label>
+        <input type="time" id="time"> <br> <br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>
